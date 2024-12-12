@@ -1,0 +1,12 @@
+﻿  lab2.cpp
+C:\Users\User\source\repos\lab2\lab2\lab2.cpp(76,5): error C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+C:\Users\User\source\repos\lab2\lab2\lab2.cpp(36,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+      C:\Users\User\source\repos\lab2\lab2\lab2.cpp(36,19):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Users\User\source\repos\lab2\lab2\lab2.cpp(74,19):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "MatrixDense<double>"
+          C:\Users\User\source\repos\lab2\lab2\lab2.cpp(34,10):
+          во время компиляции функции-члена класс шаблон "void MatrixDense<double>::randMatrix(void)"
+              C:\Users\User\source\repos\lab2\lab2\lab2.cpp(75,17):
+              см. первую ссылку на "MatrixDense<double>::randMatrix" в "main"
+  

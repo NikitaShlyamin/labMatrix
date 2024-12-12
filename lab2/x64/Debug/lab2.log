@@ -1,0 +1,12 @@
+﻿  lab2.cpp
+C:\Users\User\source\repos\lab2\lab2\lab2.cpp(38,19): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+      C:\Users\User\source\repos\lab2\lab2\lab2.cpp(38,19):
+      контекст создания экземпляра шаблона (сначала самый старый)
+          C:\Users\User\source\repos\lab2\lab2\lab2.cpp(95,19):
+          выполняется компиляция ссылки на экземпляр класс шаблон функции "MatrixDense<double>"
+          C:\Users\User\source\repos\lab2\lab2\lab2.cpp(36,18):
+          во время компиляции функции-члена класс шаблон "void MatrixDense<double>::randMatrix(void)"
+              C:\Users\User\source\repos\lab2\lab2\lab2.cpp(96,17):
+              см. первую ссылку на "MatrixDense<double>::randMatrix" в "main"
+  
+  lab2.vcxproj -> C:\Users\User\source\repos\lab2\x64\Debug\lab2.exe
