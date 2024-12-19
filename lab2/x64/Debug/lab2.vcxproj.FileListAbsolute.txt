@@ -1,1 +1,2 @@
 C:\Users\User\source\repos\lab2\lab2\x64\Debug\lab2.exe
+C:\Users\User\main-repo\labMatrix\lab2\x64\Debug\lab2.exe

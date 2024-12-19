@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\lab2\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\main-repo\\labMatrix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06873F15-8CF5-42E5-9534-76E941B2DEDD}|lab2\\lab2.vcxproj|C:\\Users\\User\\source\\repos\\lab2\\lab2\\lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{06873F15-8CF5-42E5-9534-76E941B2DEDD}|lab2\\lab2.vcxproj|C:\\Users\\User\\main-repo\\labMatrix\\lab2\\lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{06873F15-8CF5-42E5-9534-76E941B2DEDD}|lab2\\lab2.vcxproj|solutionrelative:lab2\\lab2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +29,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "delete_scalar.cpp",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\crt\\src\\vcruntime\\delete_scalar.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-19T17:17:50.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "lab2.cpp",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\lab2\\lab2\\lab2.cpp",
+              "DocumentMoniker": "C:\\Users\\User\\main-repo\\labMatrix\\lab2\\lab2.cpp",
               "RelativeDocumentMoniker": "lab2\\lab2.cpp",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\lab2\\lab2\\lab2.cpp",
+              "ToolTip": "C:\\Users\\User\\main-repo\\labMatrix\\lab2\\lab2.cpp",
               "RelativeToolTip": "lab2\\lab2.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAGYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-05T06:16:17.355Z",
               "EditorCaption": ""

@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -28,14 +29,14 @@ public:
         unsigned index = j + i * _n;
         _data[index] = value;
     }
-    T getElement(unsigned i, unsigned j)
+    T getElement(unsigned i, unsigned j) const
     {
         return _data[j + i * _n];
     }
 
     virtual void randMatrix()
     {
-        srand(time(0));
+        
         for (unsigned i = 0; i < _m; i++)
         {
             for (unsigned j = 0; j < _n; j++)
@@ -59,6 +60,10 @@ public:
     }
     MatrixDense operator +(const MatrixDense& m2)
     {
+        if (_n != m2._n || _m != m2._m)
+        {
+            throw invalid_argument("Размерность матриц не совместима");
+        }
         MatrixDense res(_m, _n);  
         for (unsigned i = 0; i < _m * _n; i++)
         {
@@ -69,6 +74,10 @@ public:
     }
     MatrixDense operator -(const MatrixDense& m2)
     {
+        if (_n != m2._n || _m != m2._m)
+        {
+            throw invalid_argument("Размерность матриц не совместима");
+        }
         MatrixDense res(_m, _n);
         for (unsigned i = 0; i < _m * _n; i++)
         {
@@ -78,32 +87,61 @@ public:
         return res;
     }
 
+    MatrixDense operator *(const MatrixDense& m2)
+    {
+        if (_n != m2._m)
+        {
+            throw invalid_argument("Размерность матриц не совместима");
+        }
+
+        MatrixDense res(_m, m2._n);  
+
+        for (unsigned i = 0; i < _m; i++) 
+        {
+            for (unsigned j = 0; j < m2._n; j++)  
+            {
+                T sum = 0;  
+                for (unsigned k = 0; k < _n; k++)
+                {
+                    sum += getElement(i, k) * m2.getElement(k, j); 
+                }
+                res.setElement(i, j, sum); 
+            }
+        }
+
+        return res;
+    }
+
 };
-//template<typename T = double>
-//class MatrixDiagonal
-//{
-//    const unsigned _m;
-//    const unsigned _n;
-//
-//    vector<int> indexes; // Храним индексы не 0 диагоналей
-//    T* _data;
-//    _data = new T[indexes.size() * _m];
-//};
+
 
 int main()
 {
-    MatrixDense<> m(10, 10), m2(10, 10);
-    m.randMatrix();
+    setlocale(LC_ALL, "RU");
+    unsigned m = 5, n = 5;
 
+    srand(time(0));
+
+    MatrixDense<> matrix1(m, n), m2(m, n);
+
+    matrix1.randMatrix();
     m2.randMatrix();
 
-    m.Print();
+    cout << "\n------------------------\n Матрица1 \n------------------------\n";
+    matrix1.Print();
+    cout << "\n------------------------\n Матрица2 \n------------------------\n";
     m2.Print();
 
-    MatrixDense<> m3 = m + m2;
+    MatrixDense<> m3 = matrix1 + m2;
     MatrixDense<> m4 = m3 - m2;
+    MatrixDense<> m5 = matrix1 * m2;
 
+    cout << "\n------------------------\n Матрица3 \n------------------------\n";
     m3.Print();
+    cout << "\n------------------------\n Матрица4 \n------------------------\n";
     m4.Print();
+    cout << "\n------------------------\n Матрица5 \n------------------------\n";
+    m5.Print();
+
+
 }
-//реализовать класс диагональной матрицы, написать перегрузки +, -, *, T
